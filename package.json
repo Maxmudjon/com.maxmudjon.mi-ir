@@ -1,0 +1,31 @@
+{
+  "name": "com.maxmudjon.mi-ir",
+  "version": "0.0.1",
+  "description": "Mi IR remote controller",
+  "main": "app.js",
+  "dependencies": {
+    "miio": "^0.15.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxmudjon/com.maxmudjon.mi-ir.git"
+  },
+  "keywords": [
+    "homey",
+    "mi",
+    "ir",
+    "remote",
+    "controller",
+    "miir"
+  ],
+  "author": "Payziyev Maxmudjon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maxmudjon/com.maxmudjon.mi-ir/issues"
+  },
+  "homepage": "https://github.com/maxmudjon/com.maxmudjon.mi-ir#readme"
+}

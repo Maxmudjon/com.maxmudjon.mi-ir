@@ -1,0 +1,43 @@
+{
+	"pair": {
+		"name": "Device name",
+		"label": "Add IP and Token",
+		"addlabel": "Select Device",
+		"ip": "Add device IP address",
+		"token": "Add device Token",
+		"title": "Enter the details of your Mi Home device.",
+		"test": "Test Connection",
+		"testing" : "Connection test successfull, you can now connect the device.",
+		"nosettings": "Please fill in all the fields.",
+		"unknownerror": "Unknown Error.",
+		"add": "Add device",
+		"no_devices_found": "No devices found.",
+		"device": {
+			"add": "Add device"
+		}
+
+	},
+	"settings": {
+		"title": "Mi IR App settings",
+		"list": {
+			"title": "Mi IR remote controller",
+			"description": "Enter you ip and token from MiHome App",
+			"ip": "IP",
+			"token": "token",
+			"addDevice": "ADD",
+			"onAddDeviceNameListLabel": "NAME: ",
+			"onAddDeviceIpListLabel": "IP: ",
+			"onAddDeviceTokenListLabel": "TOKEN: ",
+			"editOnList": "EDIT1",
+			"removeFromList": "REMOVE1"
+		},
+		"messages": {
+			"savingBusy": "Saving gateway settings to Homey...",
+			"savingError": "Oops... Something went wrong saving your settings",
+			"ipDuplicateError": "Duplicate device IP",
+			"invalidIpError": "Invalid device IP",
+			"savingSuccessRestart": "Settings saved successfully. Need restart this app",
+			"savingSuccess": "Settings saved successfully."
+		}
+	}
+}

@@ -1,0 +1,119 @@
+{
+  "id": "com.maxmudjon.mi-ir",
+  "version": "0.0.1",
+  "compatibility": ">=1.5.0",
+  "sdk": 2,
+  "name": {
+    "en": "Mi IR"
+  },
+  "description": {
+    "en": "Adds support for Mi IR remote controller."
+  },
+  "category": [
+    "tools"
+  ],
+  "permissions": [],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Maxmudjon Payziyev",
+    "email": "bio42@mail.ru"
+  },
+  "flow": {
+    "triggers": [],
+    "conditions": [],
+    "actions": [
+      {
+        "id": "send_ir_code",
+        "title": {
+          "en": "Send IR code"
+        },
+        "args": [
+          {
+            "name": "code",
+            "type": "text",
+            "placeholder": {
+              "en": "code"
+            }
+          },
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=tv"
+          }
+        ]
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "id": "tv",
+      "name": {
+        "en": "TV"
+      },
+      "class": "tv",
+      "capabilities": [
+        "onoff"
+      ],
+      "settings":[
+        {
+          "type": "group",
+          "label": {
+              "en": "Device settings"
+          },
+          "children": [
+            {
+              "id": "deviceIp",
+              "type": "text",
+              "label": {
+                  "en": "Device IP"
+              },
+              "hint": {
+                "en": "Enter Mi IR remote controller IP address."
+              },
+              "value": ""
+            },
+            {
+              "id": "deviceToken",
+              "type": "text",
+              "label": {
+                  "en": "Device Token"
+              },
+              "hint": {
+                "en": "Enter Mi IR remote controller token."
+              },
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "images": {
+        "large": "/drivers/tv/assets/images/large.png",
+        "small": "/drivers/tv/assets/images/small.png"
+      },
+      "pair": [
+        {
+          "id": "devices",
+          "navigation": {
+            "next": "keys"
+          }
+        },
+        {
+          "id": "keys",
+          "navigation": {
+            "next": "done",
+            "prev": "devices"
+          }
+        },
+        {
+          "id": "done",
+          "navigation": {
+            "prev": "devices"
+          }
+        }
+      ]
+    }
+  ]
+}
